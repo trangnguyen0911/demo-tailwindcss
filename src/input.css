@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "big-shouder-text";
+    src: url("/src/font/BigShouldersText-Regular.ttf");
+}
+@font-face {
+    font-family: "space-grotesk-font";
+    src: url("/src/font/SpaceGrotesk-Regular.otf");
+}
+@font-face {
+    font-family: "lexend-deca-font";
+    src: url("/src/font/LexendDecaRegular.ttf");
+}
+@font-face {
+    font-family: "big-shoulders-display";
+    src: url("/src/font/BigShouldersDisplay-Regular.ttf");
+}
+@font-face {
+    font-family: "big-shoulders-stencil-text";
+    src: url("/src/font/BigShouldersStencilText-SemiBold.ttf");
+}
+.dot {
+    border-color: white !important;
+};

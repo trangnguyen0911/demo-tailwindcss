@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- /** 
+ * Main HTML page
+ * 
+ * Version: 1.0
+ * Date: 12-03-2025
+ * 
+ * Copyright © 2025
+ * 
+ * Modification Logs: 
+ * DATE        AUTHOR      DESCRIPTION
+ * ----------------------------------- 
+ * 12-03-2025  TrangNTT    Created
+ */ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .active,
+        .dot:hover {
+            background-color: #FFFFFF !important
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout-container relative bg-[#191919]">
+        <!-- Fixed Header -->
+        <div
+            class="header z-40 fixed sm:w-full min-[1622px]:fixed min-[1622px]:w-[1420px] h-[48px] top-[20px] left-[46px] rounded-xl flex flex-row justify-between">
+            <div class="w-[calc(100vw-80px)] flex flex-row justify-between">
+                <img src="../src/images/Header/logo/Logo.png" class="w-[125.06px] h-[40.38px]" alt="">
+                <img src="../src/images/Header/right/Right.png" class="w-[108px] h-[48px] gap-[32px]" alt="">
+            </div>
+        </div>
+        <!-- Slider bar -->
+        <div class="banner">
+            <div class="banner-inner">
+                <div class="mySlides hidden transition ease-out duration-300 relative">
+                    <img class="w-full h-[720px] justify-between" src="../src/images/banner/slide1.jpg">
+                    <div
+                        class="absolute w-full bottom-0 left-0 pt-[50px] pr-[48px] pb-[50px] pl-[48px] flex items-end justify-between">
+                        <div class="left w-[552.25px] gap-[24px]">
+                            <span
+                                class="font-custom5 w-[429px] text-nowrap h-[144px] font-bold text-[120px] leading-none tracking-normal text-[#FFFFFF]">GO-KARTS</span>
+                            <div class="flex flex-row font-custom2 justify-normal">
+                                <p
+                                    class="w-[347px] h-[54px] leading-none tracking-normal text-[14px] font-normal text-[#D9D9D9]">
+                                    Enjoy an adrenaline ride in any weather. Outdoor track and indoor hall at a
+                                    professional level with Sodi go-karts.
+                                </p>
+                                <a href=""
+                                    class="w-[162.25px] h-[49px] text-center table bg-[url('../src/images/scroll/layout/Banner/Subtract.png')]">
+                                    <span
+                                        class="w-[107px] h-[20px] top-[19.5px] left-[387px] table-cell align-middle border-none text-[16px] font-medium leading-none tracking-normal text-[#D9D9D9]">Find
+                                        out more</span>
+                                </a>
+                            </div>
+                            <div class="text-center pt-0 pb-[100px] w-28 h-4 gap-2">
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 bg-clip-content cursor-pointer bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(1)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 bg-clip-content cursor-pointer bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(2)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 bg-clip-content cursor-pointer bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(3)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 bg-clip-content cursor-pointer bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(4)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 bg-clip-content cursor-pointer bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(5)"></span>
+                            </div>
+                        </div>
+                        <div class="right w-[573px] h-[150px] gap-[100px]">
+                            <div
+                                class="heading w-[382px] h-[150px] gap-[12px] flex flex-col float-right bg-[#292929]/60 backdrop-blur-xs">
+                                <div class="relative w-[352px]">
+                                    <img class="absolute -top-10 -left-4 w-[87px] h-[87px]"
+                                        src="../src/images/scroll/layout/Banner/image-removebg.png">
+                                    <span
+                                        class="font-custom4 pl-[60px] text-[32px] leading-none tracking-normal uppercase float-right font-normal text-[#D9D9D9]">Everyday
+                                        fun for everyone</span>
+                                </div>
+                                <p
+                                    class="w-[352px] h-[72px] font-custom2 font-normal size-[14px] leading-none tracking-normal text-[#D9D9D9]">
+                                    A few kilometers from Cheb, we have built a new entertainment centre <span
+                                        class="bg-gradient-to-r from-[#009FE3] to-[#E30613] text-transparent bg-clip-text">FUN
+                                        Arena Cheb</span> for you. You will find entertainment and sports activities for
+                                    children and adults here.
+                                </p>
+                                <div class="relative mt-10 mr-[20px]">
+                                    <div
+                                        class="absolute bottom-0 right-0 bg-[#D9D9D9] rounded-[50px] w-[170px] h-[38px] pt-[4px] pr-[4px] pb-[4px] pl-[12px] gap-[10px] flex">
+                                        <span
+                                            class="flex-none w-[122px] h-[20px] font-custom3 font-bold text-[16px] tracking-normal text-[#292929]">+420737878891</span>
+                                        <span class="flex-1"><img src="../src/images/scroll/layout/Banner/Frame.png"
+                                                class="w-[30px] h-[30px] rounded-[50px]" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides hidden transition ease-out duration-300 relative">
+                    <img class="w-full h-[720px] justify-between" src="../src/images/banner/slide2.png">
+                    <div
+                        class="absolute w-full bottom-0 left-0 pt-[50px] pr-[48px] pb-[50px] pl-[48px] flex items-end justify-between">
+                        <div class="left w-[552.25px] gap-[24px]">
+                            <span
+                                class="font-custom5 w-[429px] text-nowrap h-[144px] font-bold text-[120px] leading-none tracking-normal text-[#FFFFFF]">JUMPARENA</span>
+                            <div class="flex flex-row font-custom2 justify-normal">
+                                <p
+                                    class="w-[347px] h-[54px] leading-none tracking-normal text-[14px] font-normal text-[#D9D9D9]">
+                                    Aréna se spoustou atrakcí pro děti i dospělé všech věkových kategorií. Trampolíny,
+                                    lezecká stěna, ninja dráha a další atrakce.
+                                </p>
+                                <a href=""
+                                    class="w-[162.25px] h-[49px] table text-center bg-[url('../src/images/scroll/layout/Banner/Subtract.png')]">
+                                    <span
+                                        class="w-[107px] h-[20px] top-[19.5px] left-[387px] table-cell align-middle border-none text-[16px] font-medium leading-none tracking-normal text-[#D9D9D9]">Find
+                                        out more</span>
+                                </a>
+                            </div>
+                            <div class="text-center pt-0 pb-[100px] w-28 h-4 gap-2">
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(1)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(2)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(3)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(4)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(5)"></span>
+                            </div>
+                        </div>
+                        <div class="right w-[573px] h-[150px] gap-[100px]">
+                            <div
+                                class="heading w-[382px] h-[150px] gap-[12px] flex flex-col float-right bg-[#292929]/60 backdrop-blur-xs">
+                                <div class="relative w-[352px]">
+                                    <img class="absolute -top-10 -left-4 w-[87px] h-[87px]"
+                                        src="../src/images/scroll/layout/Banner/image-removebg.png">
+                                    <span
+                                        class="font-custom4 pl-[60px] text-[32px] leading-none tracking-normal uppercase float-right font-normal text-[#D9D9D9]">Everyday
+                                        fun for everyone</span>
+                                </div>
+                                <p
+                                    class="w-[352px] h-[72px] font-custom2 font-normal size-[14px] leading-none tracking-normal text-[#D9D9D9]">
+                                    A few kilometers from Cheb, we have built a new entertainment centre <span
+                                        class="bg-gradient-to-r from-[#009FE3] to-[#E30613] text-transparent bg-clip-text">FUN
+                                        Arena Cheb</span> for you. You will find entertainment and sports activities for
+                                    children and adults here.
+                                </p>
+                                <div class="relative mt-10 mr-[20px]">
+                                    <div
+                                        class="absolute bottom-0 right-0 bg-[#D9D9D9] rounded-[50px] w-[170px] h-[38px] pt-[4px] pr-[4px] pb-[4px] pl-[12px] gap-[10px] flex">
+                                        <span
+                                            class="flex-none w-[122px] h-[20px] font-custom3 font-bold text-[16px] tracking-normal text-[#292929]">+420737878891</span>
+                                        <span class="flex-1"><img src="../src/images/scroll/layout/Banner/Frame.png"
+                                                class="w-[30px] h-[30px] rounded-[50px]" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides hidden transition ease-out duration-300 relative">
+                    <img class="w-full h-[720px] justify-between" src="../src/images/banner/slide3.jpg">
+                    <div
+                        class="absolute w-full bottom-0 left-0 pt-[50px] pr-[48px] pb-[50px] pl-[48px] flex items-end justify-between">
+                        <div class="left w-[552.25px] gap-[24px]">
+                            <span
+                                class="font-custom5 w-[429px] text-nowrap h-[144px] font-bold text-[120px] leading-none tracking-normal text-[#FFFFFF]">Virtuální
+                                realita</span>
+                            <div class="flex flex-row font-custom2 justify-normal">
+                                <p
+                                    class="w-[347px] h-[54px] leading-none tracking-normal text-[14px] font-normal text-[#D9D9D9]">
+                                    Díky naší virtuální realitě vstoupíte do jiného světa a poznáte nové technologie.
+                                    Vyberte si z naší nabídky her a zažijte VR na vlastní kůži.
+                                </p>
+                                <a href=""
+                                    class="w-[162.25px] h-[49px] text-center table bg-[url('../src/images/scroll/layout/Banner/Subtract.png')]">
+                                    <span
+                                        class="w-[107px] h-[20px] top-[19.5px] left-[387px] table-cell align-middle border-none text-[16px] font-medium leading-none tracking-normal text-[#D9D9D9]">Find
+                                        out more</span>
+                                </a>
+                            </div>
+                            <div class="text-center pt-0 pb-[100px] w-28 h-4 gap-2">
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(1)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(2)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(3)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(4)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(5)"></span>
+                            </div>
+                        </div>
+                        <div class="right w-[573px] h-[150px] gap-[100px]">
+                            <div
+                                class="heading w-[382px] h-[150px] gap-[12px] flex flex-col float-right bg-[#292929]/60 backdrop-blur-xs">
+                                <div class="relative w-[352px]">
+                                    <img class="absolute -top-10 -left-4 w-[87px] h-[87px]"
+                                        src="../src/images/scroll/layout/Banner/image-removebg.png">
+                                    <span
+                                        class="font-custom4 pl-[60px] text-[32px] leading-none tracking-normal uppercase float-right font-normal text-[#D9D9D9]">Everyday
+                                        fun for everyone</span>
+                                </div>
+                                <p
+                                    class="w-[352px] h-[72px] font-custom2 font-normal size-[14px] leading-none tracking-normal text-[#D9D9D9]">
+                                    A few kilometers from Cheb, we have built a new entertainment centre <span
+                                        class="bg-gradient-to-r from-[#009FE3] to-[#E30613] text-transparent bg-clip-text">FUN
+                                        Arena Cheb</span> for you. You will find entertainment and sports activities for
+                                    children and adults here.
+                                </p>
+                                <div class="relative mt-10 mr-[20px]">
+                                    <div
+                                        class="absolute bottom-0 right-0 bg-[#D9D9D9] rounded-[50px] w-[170px] h-[38px] pt-[4px] pr-[4px] pb-[4px] pl-[12px] gap-[10px] flex">
+                                        <span
+                                            class="flex-none w-[122px] h-[20px] font-custom3 font-bold text-[16px] tracking-normal text-[#292929]">+420737878891</span>
+                                        <span class="flex-1"><img src="../src/images/scroll/layout/Banner/Frame.png"
+                                                class="w-[30px] h-[30px] rounded-[50px]" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides hidden transition ease-out duration-300 relative">
+                    <img class="w-full h-[720px] justify-between" src="../src/images/banner/slide4.jpg">
+                    <div
+                        class="absolute w-full bottom-0 left-0 pt-[50px] pr-[48px] pb-[50px] pl-[48px] flex items-end justify-between">
+                        <div class="left w-[552.25px] gap-[24px]">
+                            <span
+                                class="font-custom5 w-[429px] text-nowrap h-[144px] font-bold text-[120px] leading-none tracking-normal text-[#FFFFFF]">MULTIBALL</span>
+                            <div class="flex flex-row font-custom2 justify-normal">
+                                <p
+                                    class="w-[347px] h-[54px] leading-none tracking-normal text-[14px] font-normal text-[#D9D9D9]">
+                                    Interaktivní sportovní a herní konzole, která z pohybu a vzdělávání dělá opravdovou
+                                    zábavu. Velké množství her zaujme všechny věkové kategorie.
+                                </p>
+                                <a href=""
+                                    class="w-[162.25px] h-[49px] text-center table bg-[url('../src/images/scroll/layout/Banner/Subtract.png')]">
+                                    <span
+                                        class="w-[107px] h-[20px] top-[19.5px] left-[387px] table-cell align-middle border-none text-[16px] font-medium leading-none tracking-normal text-[#D9D9D9]">Find
+                                        out more</span>
+                                </a>
+                            </div>
+                            <div class="text-center pt-0 pb-[100px] w-28 h-4 gap-2">
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(1)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(2)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(3)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(4)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(5)"></span>
+                            </div>
+                        </div>
+                        <div class="right w-[573px] h-[150px] gap-[100px]">
+                            <div
+                                class="heading w-[382px] h-[150px] gap-[12px] flex flex-col float-right bg-[#292929]/60 backdrop-blur-xs">
+                                <div class="relative w-[352px]">
+                                    <img class="absolute -top-10 -left-4 w-[87px] h-[87px]"
+                                        src="../src/images/scroll/layout/Banner/image-removebg.png">
+                                    <span
+                                        class="font-custom4 pl-[60px] text-[32px] leading-none tracking-normal uppercase float-right font-normal text-[#D9D9D9]">Everyday
+                                        fun for everyone</span>
+                                </div>
+                                <p
+                                    class="w-[352px] h-[72px] font-custom2 font-normal size-[14px] leading-none tracking-normal text-[#D9D9D9]">
+                                    A few kilometers from Cheb, we have built a new entertainment centre <span
+                                        class="bg-gradient-to-r from-[#009FE3] to-[#E30613] text-transparent bg-clip-text">FUN
+                                        Arena Cheb</span> for you. You will find entertainment and sports activities for
+                                    children and adults here.
+                                </p>
+                                <div class="relative mt-10 mr-[20px]">
+                                    <div
+                                        class="absolute bottom-0 right-0 bg-[#D9D9D9] rounded-[50px] w-[170px] h-[38px] pt-[4px] pr-[4px] pb-[4px] pl-[12px] gap-[10px] flex">
+                                        <span
+                                            class="flex-none w-[122px] h-[20px] font-custom3 font-bold text-[16px] tracking-normal text-[#292929]">+420737878891</span>
+                                        <span class="flex-1"><img src="../src/images/scroll/layout/Banner/Frame.png"
+                                                class="w-[30px] h-[30px] rounded-[50px]" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides hidden transition ease-out duration-300 relative">
+                    <img class="w-full h-[720px] justify-between" src="../src/images/banner/slide5.png">
+                    <div
+                        class="absolute w-full bottom-0 left-0 pt-[50px] pr-[48px] pb-[50px] pl-[48px] flex items-end justify-between">
+                        <div class="left w-[552.25px] gap-[24px]">
+                            <span
+                                class="font-custom5 w-[429px] text-nowrap h-[144px] font-bold text-[120px] leading-none tracking-normal text-[#FFFFFF]">Laserová
+                                střelnice</span>
+                            <div class="flex flex-row font-custom2 justify-normal">
+                                <p
+                                    class="w-[347px] h-[54px] leading-none tracking-normal text-[14px] font-normal text-[#D9D9D9]">
+                                    Vyzkoušejte si nebo vypilujte svou mušku! Laserová střelnice se třemi režimy střelby
+                                    na čas otestuje nejen vaši přesnost, ale také rychlost a postřeh.
+                                </p>
+                                <a href=""
+                                    class="w-[162.25px] h-[49px] text-center table bg-[url('../src/images/scroll/layout/Banner/Subtract.png')]">
+                                    <span
+                                        class="w-[107px] h-[20px] top-[19.5px] left-[387px] table-cell align-middle border-none text-[16px] font-medium leading-none tracking-normal text-[#D9D9D9]">Find
+                                        out more</span>
+                                </a>
+                            </div>
+                            <div class="text-center pt-0 pb-[100px] w-28 h-4 gap-2">
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(1)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(2)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(3)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(4)"></span>
+                                <span
+                                    class="h-4 w-4 p-0.5 gap-2.5 cursor-pointer bg-clip-content bg-transparent inline-block rounded-full dot !border border-solid"
+                                    onclick="currentSlide(5)"></span>
+                            </div>
+                        </div>
+                        <div class="right w-[573px] h-[150px] gap-[100px]">
+                            <div
+                                class="heading w-[382px] h-[150px] gap-[12px] flex flex-col float-right bg-[#292929]/60 backdrop-blur-xs">
+                                <div class="relative w-[352px]">
+                                    <img class="absolute -top-10 -left-4 w-[87px] h-[87px]"
+                                        src="../src/images/scroll/layout/Banner/image-removebg.png">
+                                    <span
+                                        class="font-custom4 pl-[60px] text-[32px] leading-none tracking-normal uppercase float-right font-normal text-[#D9D9D9]">Everyday
+                                        fun for everyone</span>
+                                </div>
+                                <p
+                                    class="w-[352px] h-[72px] font-custom2 font-normal size-[14px] leading-none tracking-normal text-[#D9D9D9]">
+                                    A few kilometers from Cheb, we have built a new entertainment centre <span
+                                        class="bg-gradient-to-r from-[#009FE3] to-[#E30613] text-transparent bg-clip-text">FUN
+                                        Arena Cheb</span> for you. You will find entertainment and sports activities for
+                                    children and adults here.
+                                </p>
+                                <div class="relative mt-10 mr-[20px]">
+                                    <div
+                                        class="absolute bottom-0 right-0 bg-[#D9D9D9] rounded-[50px] w-[170px] h-[38px] pt-[4px] pr-[4px] pb-[4px] pl-[12px] gap-[10px] flex">
+                                        <span
+                                            class="flex-none w-[122px] h-[20px] font-custom3 font-bold text-[16px] tracking-normal text-[#292929]">+420737878891</span>
+                                        <span class="flex-1"><img src="../src/images/scroll/layout/Banner/Frame.png"
+                                                class="w-[30px] h-[30px] rounded-[50px]" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Reserve Now -->
+        <div
+            class="reserve-now absolute w-[264.75px] h-[210px] top-[575px] md:left-[375px] lg:left-[625px] border-none flex justify-center items-center">
+            <button
+                class="w-[264.75px] h-[65px] top-[662px] left-[625px] rounded-lg border-none bg-[#E30613] skew-x-[150deg] inline-flex"
+                onclick="location.href='https://booking.funarenacheb.cz/'">
+                <div class="size-full z-20 table rounded-lg bg-[#009FE3] border-none">
+                    <span
+                        class="font-custom4 w-[166.25px] h-[65px] skew-x-[-150deg] table-cell align-middle font-bold text-[32px] leading-8 tracking-normal text-[#D9D9D9]">RESERVE</span>
+                </div>
+                <div class="size-full z-19 table rounded-lg  border-none">
+                    <span
+                        class="font-custom4 w-[264.75px] h-[65px] skew-x-[-150deg] table-cell align-middle font-bold text-[32px] leading-8 tracking-normal text-[#D9D9D9]">NOW!</span>
+                </div>
+            </button>
+        </div>
+        <!-- Registration -->
+        <div class="registration w-full h-auto pt-[100px] pr-[24px] pb-[100px] pl-[24px] gap-[10px]">
+            <div
+                class="container w-full h-auto max-w-[1280px] gap-[80px] min-[1240px]:flex min-[1240px]:flex-row justify-between">
+                <div class="healing w-[566px] h-[214px] gap-[32px]">
+                    <p class="font-custom4 h-[86px] w-[700px] text-7xl tracking-normal uppercase text-[#D9D9D9]">
+                        Registration</p>
+                    <p class="font-custom2 w-[566px] h-[96px] text-base leading-normal tracking-normal text-[#D9D9D9]">
+                        For organizational and security reasons, every visitor to the FUN arena Cheb must register
+                        before entering the attraction. At the reception, your registration will be completed and you
+                        will receive a loyalty card which you will use for our services.
+                    </p>
+                </div>
+                <div class="steps font-custom2 w-[634px] h-[528px] gap-[48px]">
+                    <div class="step1 h-[144px] w-[594px]">
+                        <div class="counter flex flex-row">
+                            <button class="w-[66.47px] h-[50px] rounded-lg">
+                                <span
+                                    class="w-[33px] h-[50px] top-[14px] left-[16.47px] font-bold text-[72px] leading-[50px] tracking-normal text-[#009FE3]">1</span>
+                            </button>
+                            <div class="w-[581.12px] h-[64px] rounded-lg text-[#292929]">
+                                <div
+                                    class="w-[494px] h-[64px] rounded-lg border-none bg-[#292929] skew-x-[160deg] inline-flex">
+                                    <span
+                                        class="font-bold text-[24px] leading-[64px] pl-2 tracking-normal text-[#D9D9D9] skew-x-[-160deg]">Choose
+                                        an Attraction</span>
+                                </div>
+                                <div
+                                    class="w-[494px] h-[24px] font-normal text-[16px] leading-normal tracking-normal text-[#D9D9D9]">
+                                    Choose from the attractions of the FUN arena.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step2 h-[144px] w-[468px] flex flex-row">
+                        <div class="counter flex flex-row">
+                            <button class="w-[66.47px] h-[50px] rounded-lg">
+                                <span
+                                    class="w-[33px] h-[50px] top-[14px] left-[16.47px] font-bold text-[72px] leading-[50px] tracking-normal text-[#009FE3]">2</span>
+                            </button>
+                            <div class="w-auto h-[64px] rounded-lg text-[#292929]">
+                                <div
+                                    class="w-auto h-[64px] rounded-lg border-none bg-[#292929] skew-x-[160deg] inline-flex">
+                                    <div class="flex flex-row w-[363px] justify-between items-center skew-x-[-160deg]">
+                                        <div
+                                            class="w-[97px] h-[64px] pl-2 font-bold text-[24px] leading-[64px] tracking-normal text-[#D9D9D9]">
+                                            Register</div>
+
+                                        <a class="inset-y-1/3 bg-[#E30613] w-[86px] h-[26px] rounded-lg pt-[4px] pr-[8px] pb-[4px] pl-[8px] gap-[10px] text-[#FFFFFF] text-[14px] font-bold"
+                                            href="https://web.racefacer.com/kiosk/kartarenacheb">Click here</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[363px] h-[72px] font-normal text-[16px] leading-normal tracking-normal text-[#D9D9D9]">
+                                    You can register at the reception or by clicking the button above from the comfort
+                                    of your home.</div>
+                            </div>
+                        </div>
+                        <img src="../src/images/scroll/layout/f8dff1f81853760c963cd9894c693bb0.png"
+                            class="w-[128px] h-[128px] rounded-xl z-10 ml-2" alt="">
+                    </div>
+                    <div class="step3 h-[144px] w-[594px]">
+                        <div class="counter flex flex-row">
+                            <button class="w-[66.47px] h-[50px] rounded-lg">
+                                <span
+                                    class="w-[33px] h-[50px] top-[14px] left-[16.47px] font-bold text-[72px] leading-[50px] tracking-normal text-[#009FE3]">3</span>
+                            </button>
+                            <div class="w-[581.12px] h-[64px] rounded-lg text-[#292929]">
+                                <div
+                                    class="w-[494px] h-[64px] rounded-lg border-none bg-[#292929] skew-x-[160deg] inline-flex">
+                                    <span
+                                        class="font-bold text-[24px] leading-[64px] pl-2 tracking-normal text-[#D9D9D9] skew-x-[-160deg]">Have
+                                        Fun</span>
+                                </div>
+                                <div
+                                    class="w-[494px] h-[24px] font-normal text-[16px] leading-normal tracking-normal text-[#D9D9D9]">
+                                    Thank you for your online registrations. For each purchase you get points, which you
+                                    can apply to our services and attractions then. We look forward to you!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Floating logo -->
+        <div class="absolute w-[1512px] h-[728px] pt-[100px] pr-[24px] pb-[100px] pl-[24px] top-[25%] gap-[10px] z-30">
+            <img src="../src/images/scroll/Floating Logo.png" class="" alt="">
+        </div>
+        <!-- About -->
+        <div class="about w-full h-[867px] pr-[24px] pl-[24px] flex justify-center">
+            <div class="w-full max-w-[1280px] gap-[48px] flex flex-col justify-center items-end">
+                <div class="frame36 min-[1092px]:w-[1047px] min-[1092px]:flex min-[1092px]:flex-row justify-between">
+                    <div class="frame35 w-[578px] gap-[32px] flex flex-col justify-center">
+                        <span
+                            class="w-[578px] h-[172px] font-custom4 font-bold text-[72px] leading-none tracking-normal uppercase text-[#D9D9D9]">
+                            New entertainment centre near Cheb
+                        </span>
+                        <span
+                            class="font-custom2 font-normal text-[16px] leading-normal tracking-normal text-[#D9D9D9]">
+                            We have been entertaining children and adults in western Bohemia for more than 10 years!
+                        </span>
+                    </div>
+                    <div class="frame5 w-auto min-[1092px]:relative">
+                        <div class="min-[1092px]:absolute w-[185px] h-[24px] gap-[12px] bottom-0 right-0 inline-flex">
+                            <span
+                                class="w-[149px] h-20px font-custom2 font-medium text-[16px] leading-none tracking-normal text-[#D9D9D9]">
+                                Find more about us
+                            </span>
+                            <span class="w-[24px] h-[24px]">
+                                <img src="../src/images/scroll/layout/About/Frame.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group9 w-full h-[567px] gap-[12px] relative">
+                    <img src="../src/images/scroll/layout/About/image.png"
+                        class="w-full h-[567px] top-[300px] rounded-3xl opacity-50" alt="">
+                    <img src="../src/images/scroll/layout/About/Frame 39.png"
+                        class="absolute top-1/2 left-1/2 w-[80px] h-[80px]" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Activities -->
+        <div
+            class="activities w-full min-[1092px]:h-[858px] pt-[100px] pb-[100px] pr-[24px] pl-[24px] gap-[48px] flex justify-center">
+            <div class="w-full h:auto min-[1092px]:h-[86px] max-w-[1280px] gap-[10px] flex flex-col justify-between">
+                <div class="heading w-full min-[1043px]:flex flex-row justify-between items-center">
+                    <span
+                        class="w-[930px] h-[86px] font-custom1 font-bold text-[72px] leading-none tracking-normal uppercase text-[#D9D9D9]">OUR
+                        ATTRACTIONS</span>
+                    <div class="sm:inline-block min-[1043px]:flex min-[1043px]:justify-center min-[1043px]:items-end">
+                        <span
+                            class="w-[284px] h-[20px] text-nowrap mr-1 font-custom2 font-medium text-[16px] leading-none tracking-normal text-[#D9D9D9]">Multiple
+                            activities at Fun Arena Cheb</span>
+                        <img src="../src/images/scroll/layout/Activities/Polygon 3.png" class="w-[16-px] h-[16px]"
+                            alt="">
+                        <img src="../src/images/scroll/layout/Activities/Polygon 2.png" class="w-[16-px] h-[16px]"
+                            alt="">
+                    </div>
+                </div>
+                <div
+                    class="relative content w-full max-w-[1280px] sm:h-auto min-[1092px]:h-[524px] min-[1092px]:flex flex-row justify-between">
+                    <div class="tabs w-[500px] h-[524px] pt-[40px] pb-[40px] gap-[40px]">
+                        <div class="frame15 w-[500px] h-[444px] pr-[40px] gap-[12px] flex flex-col justify-center">
+                            <div
+                                class="relative w-[460px] h-[64px] rounded-xl skew-x-[150deg] bg-[linear-gradient(90deg,rgba(217,217,217,0.2)_0%,#D9D9D9_100%),url('../src/images/scroll/layout/Activities/image1.png')] flex">
+                                <span
+                                    class="absolute right-7 text-right h-[38px] top-[13px] left-[73.25px] font-custom1 font-normal text-[32px] leading-none tracking-normal text-[#292929] uppercase -skew-x-[150deg]">kartarena</span>
+                            </div>
+                            <div
+                                class="relative w-[460px] h-[64px] rounded-xl skew-x-[150deg] bg-[linear-gradient(90deg,rgba(41,41,41,0.2)_0%,#292929_100%),url('../src/images/scroll/layout/Activities/image2.png')] flex">
+                                <span
+                                    class="absolute right-7 text-right h-[38px] top-[13px] left-[73.25px] font-custom1 font-normal text-[32px] leading-none tracking-normal text-[#FFFFFF] uppercase -skew-x-[150deg]">jumparena</span>
+                            </div>
+                            <div
+                                class="relative w-[460px] h-[64px] rounded-xl skew-x-[150deg] bg-[linear-gradient(90deg,rgba(217,217,217,0.2)_0%,#D9D9D9_100%),url('../src/images/scroll/layout/Activities/image3.png')] flex">
+                                <span
+                                    class="absolute right-7 text-right h-[38px] top-[13px] left-[73.25px] font-custom1 font-normal text-[32px] leading-none tracking-normal text-[#292929] uppercase -skew-x-[150deg]">virtual
+                                    reality</span>
+                            </div>
+                            <div
+                                class="relative w-[460px] h-[64px] rounded-xl skew-x-[150deg] bg-[linear-gradient(90deg,rgba(217,217,217,0.2)_0%,#D9D9D9_100%),url('../src/images/scroll/layout/Activities/image4.png')] flex">
+                                <span
+                                    class="absolute right-7 text-right h-[38px] top-[13px] left-[73.25px] font-custom1 font-normal text-[32px] leading-none tracking-normal text-[#292929] uppercase -skew-x-[150deg]">multiball</span>
+                            </div>
+                            <div
+                                class="relative w-[460px] h-[64px] rounded-xl skew-x-[150deg] bg-[linear-gradient(90deg,rgba(217,217,217,0.2)_0%,#D9D9D9_100%),url('../src/images/scroll/layout/Activities/image5.png')] flex">
+                                <span
+                                    class="absolute right-7 text-right h-[38px] top-[13px] left-[73.25px] font-custom1 font-normal text-[32px] leading-none tracking-normal text-[#292929] uppercase -skew-x-[150deg]">laser
+                                    shooting range</span>
+                            </div>
+                            <div
+                                class="relative w-[460px] h-[64px] rounded-xl skew-x-[150deg] bg-[linear-gradient(90deg,rgba(217,217,217,0.2)_0%,#D9D9D9_100%),url('../src/images/scroll/layout/Activities/image6.png')] flex">
+                                <span
+                                    class="absolute right-7 text-right h-[38px] top-[13px] left-[73.25px] font-custom1 font-normal text-[32px] leading-none tracking-normal text-[#292929] uppercase -skew-x-[150deg]">company
+                                    events</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative w-[780px] h-[524px] pt-[3px] pb-[3px] bg-[linear-gradient(338.19deg,#292929_7.74%,rgba(41,41,41,0)_67.2%),url('../src/images/scroll/layout/Activities/Shape.png')]">
+                        <div class="absolute bottom-[3px] left-2 w-[747px] h-[84px] flex justify-between">
+                            <div class="w-[366.49px] h-[84px] pb-[24px] gap-[10px]">
+                                <span
+                                    class="w-[366.49px] h-[60px] font-custom2 font-normal text-[16px] leading-none tracking-normal text-[#FFFFFF]">
+                                    Arena with lots of attractions for children and adults of all ages. Trampolines,
+                                    climbing wall, ninja track and other attractions.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="absolute bottom-0 right-0 w-[155px] h-[44px] font-custom2 font-bold text-[16px] gap-[10px] pt-[12px] pr-[24px] pb-[12px] pl-[24px] rounded-full bg-[#D9D9D9] leading-none tracking-normal text-[#292929]">Find
+                        out more</button>
+                </div>
+            </div>
+        </div>
+        <!-- Gifting -->
+        <div class="flex justify-center sm:w-full xl:w-[1512px] h-[109px] pr-[24px] pl-[24px] gap-[10px]">
+            <div
+                class="w-[1000px] max-w-[1000px] rounded-3xl pt-[24px] pr-[10px] pb-[24px] pl-[10px] gap-[48px] backdrop-blur-sm bg-[#E30613]">
+                <div class="relative flex flex-row font-custom2 leading-none tracking-normal text-[#FFFFFF]">
+                    <div class="w-[100px] relative">
+                        <img src="../src/images/scroll/layout/Gifting/red-gift-box-11401.png"
+                            class="absolute w-[120px] h-[120px] -rotate-45 -left-6 -top-20" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="w-[668px] h-[41px] font-medium text-[32px] text-center">Make somebody happy with a
+                            gift voucher</span>
+                        <span class="w-[668px] h-[20px] font-mediumd text-[16px] text-center">The voucher is valid for
+                            all services. Unforgettable experiences for children and adults!</span>
+                    </div>
+                    <button
+                        class="absolute -right-10 w-[115px] h-[44px] rounded-xl pt-[12px] pr-[24px] pb-[12px] pl-[24px] bg-[#FFFFFF]"
+                        onclick="location.href='https://vouchers.funarenacheb.cz/c/darkovy-poukaz'">
+                        <span
+                            class="w-[67px] h-[20px] font-custom2 font-bold text-[16px] tracking-normal leading-none text-[#292929]">Buy
+                            now</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div
+            class="footer sm:w-full 2xl:w-[1512px] h-[319px] border-t-[1px] border-[#292929] pt-[80px] pr-[24px] pb-[80px] pl-[24px] gap-[24px] flex flex-col justify-between items-center">
+            <div class="w-full h-[95px] max-w-[1280px] flex flex-row justify-between">
+                <img src="../src/images/scroll/footer/footer.png" class="w-[200px] h-[95px]" alt="">
+                <p
+                    class="w-[300px] h-[63px] font-custom2 font-normal text-[14px] leading-normal tracking-normal text-[#FFFFFF]">
+                    New entertainment centre FUN arena Cheb. You will find entertainment and sports activities for
+                    children and adults here.</p>
+                <div
+                    class="w-[182px] h-[77px] gap-[10px] font-custom2 font-normal text-[14px] tracking-normal text-[#FFFFFF]">
+                    <span class="leading-normal">Potočiště 3, 350 02 Odrava</span>
+                    <span class="leading-none">fun@funarenacheb.cz</span>
+                    <span class="leading-none">+420737878891</span>
+                </div>
+            </div>
+            <div class="md:w-full xl:w-[1280px] h-[40px]  flex flex-row justify-between">
+                <div
+                    class="pt-[4px] pr-[12px] pb-[4px] pl-[4px] w-[188px] h-[40px] flex flex-row justify-between bg-[#292929] rounded-full">
+                    <img src="../src/images/scroll/footer/Frame1.png" class="w-[32px] h-[32px]" alt="">
+                    <img src="../src/images/scroll/footer/Frame2.png" class="w-[32px] h-[32px]" alt="">
+                    <img src="../src/images/scroll/footer/Frame3.png" class="w-[32px] h-[32px]" alt="">
+                    <img src="../src/images/scroll/footer/Frame4.png" class="w-[32px] h-[32px]" alt="">
+                </div>
+                <div class="w-[382px] h-[40px] gap-[48px] text-right">
+                    <span class="inline-block font-custom2 font-normal text-[14px] tracking-normal text-[#FFFFFF]">©
+                        2025 FUN Arena
+                        Cheb. All rights Reserved.</span>
+                    <img src="../src/images/scroll/footer/Frame.png"
+                        class="inline-block w-[40px] rounded-full h-[40px] pt-[9px] pr-[6px] pb-[9px] pl-[6px] gap-[10px]"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
